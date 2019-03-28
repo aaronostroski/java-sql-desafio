@@ -1,0 +1,35 @@
+Candidato: Aaron de Melo Ostroski
+
+---- Caso de Teste: Teste QA 2019 ----  
+
+Suite de Teste: Cadastrar questionário.
+Status do Teste: Teste efetuado com sucesso.
+Tipo de Teste e ferramenta: Automação de Teste funcional("caminho feliz"); Selenium WebDriver.
+Objetivo: Garantir que o candidato consiga acessar o Sistema, navegar até o questionário, cadastrar as informações necessárias e salvar.
+
+Pré-condições:  - Possuir usuário cadastrado no sistema.
+				- Possuir acesso á internet.
+				
+Ações do passo			/-------------------------------/			Resultado esperado			  /-------------------------------/			  	Resultado obtido
+
+1. Acessar URL: http://clicq.paripassu.com.br.						A tela apresentará os campso para informar "Usuário" e "Senha".				Ok
+
+2. Informar "Usuario" e "Senha", clicar no botão "Entrar".			A tela apresentará a Home Page do sistema.									Ok
+
+3. Navegar pela barra de navegação, clicar na lista "Aplicação de	A tela apresentará a Page para escolher o questionário.						Ok
+  Questionário" e clicar no item "Nova aplicação de Questionário".
+
+4. Clicar no item da lista "Teste QA 2018 - 1".						A tela apresentará a Page para escolher o avaliado.							Ok
+
+5. Clicar no item da lista "Estagiário de Qualidade".				A tela apresentará o questionário do candidato.								Ok
+
+6. Informar "Nome", "E-mail" e "Idade". Em seguida clicar no botão	A tela apresentará uma continuação do questionário.							Ok
+">".
+
+7. Informar os campos restante do formulário e selecionar a opção 	Será exibido uma mensagem em verde confirmando o cadastro.					Ok															Ok
+"Sim". Em seguida clicar no botão "Salvar e finalizar".
+
+8. Clicar em "sair" no "dropdown" no canto superior direito.		O usuário deslogará do sistema.												Ok
+
+		
+	

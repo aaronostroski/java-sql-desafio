@@ -1,0 +1,21 @@
+Seu nome: Aaron de Melo Ostroski
+
+1) SELECT * FROM en_filme ORDER BY data_lancamento ASC LIMIT 1;
+
+2) SELECT en_cliente.id_cliente, 
+en_cliente.nome,
+COUNT(en_aluguel.id_cliente) as alugueis
+FROM en_cliente, en_aluguel
+WHERE en_cliente.id_cliente = en_aluguel.id_cliente
+GROUP BY en_cliente.id_cliente, en_aluguel.id_cliente
+ORDER BY (en_aluguel.id_cliente) ASC;
+
+3) SELECT en_aluguel.id_cliente, 
+en_cliente.nome,
+COUNT (en_aluguel.id_aluguel) AS alugueis,
+SUM (en_aluguel.valor) AS total_gasto,
+EXTRACT(YEAR FROM en_aluguel.data_aluguel) AS ano
+FROM en_aluguel
+INNER JOIN en_cliente ON en_aluguel.id_cliente = en_cliente.id_cliente
+GROUP BY en_aluguel.id_cliente, en_aluguel.data_aluguel, en_cliente.nome
+ORDER BY SUM(en_aluguel.valor) DESC;
